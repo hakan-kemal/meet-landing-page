@@ -1,0 +1,52 @@
+:root {
+  /* colors */
+  --color-cyan-300: hsl(192, 90%, 77%);
+  --color-cyan-600: hsl(192, 37%, 48%);
+  --color-purple-300: hsl(268, 100%, 86%);
+  --color-purple-600: hsl(268, 34%, 53%);
+  --color-slate-300: hsl(240, 18%, 85%);
+  --color-slate-600: hsl(240, 10%, 57%);
+  --color-slate-900: hsl(240, 21%, 20%);
+  --color-white: hsl(0, 0%, 98%);
+  /* typography */
+  --font-family-base: 'Red Hat Display', sans-serif;
+  --font-weight-base: 500;
+  --font-weight-bold: 900;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+  --text-preset-1: var(--font-weight-base) 4rem / 1.1 var(--font-family-base);
+  /* spacing */
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-700: 56px;
+  --spacing-800: 64px;
+  --spacing-900: 72px;
+  --spacing-1000: 80px;
+  --spacing-1400: 112px;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  color: var(--color-slate-900);
+  font: var(--font-weight-base) var(--font-size-base) / var(--line-height-base)
+    var(--font-family-base);
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.125rem;
+}
