@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header>
       <nav class="site-nav" aria-label="Primary">
         <a href="/" class="site-logo" aria-label="Meet homepage">
-          <img src="/assets/logo.svg" alt="Meet logo" />
+          <img src="/assets/logo.svg" alt="" />
         </a>
       </nav>
 
@@ -38,7 +38,9 @@
         />
 
         <div class="hero-content">
-          <h1 id="hero-title" class="hero-title">Group Chat for Everyone</h1>
+          <h1 id="hero-title" class="hero-title">
+            Group Chat<br />for Everyone
+          </h1>
 
           <p class="hero-description">
             Meet makes it easy to connect with others face-to-face virtually and
@@ -55,53 +57,54 @@
       </section>
     </header>
 
-    <main class="site-main">
-      <section class="product-content" aria-labelledby="product-title">
-        <div class="product-step" aria-hidden="true">01</div>
+    <main class="site-main" aria-labelledby="main-title">
+      <div class="step" aria-hidden="true">
+        <div class="step-line"></div>
+        <div class="step-number">01</div>
+      </div>
 
-        <ul class="gallery-grid" aria-label="Meeting feature previews">
-          <li class="gallery-item">
-            <img
-              src="./assets/desktop/image-woman-in-videocall.jpg"
-              alt="Woman participating in a video call"
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              src="./assets/desktop/image-women-videochatting.jpg"
-              alt="Three women video chatting together"
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              src="./assets/desktop/image-men-in-meeting.jpg"
-              alt="Man participating in a video call"
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              src="./assets/desktop/image-man-texting.jpg"
-              alt="Man texting on his phone"
-            />
-          </li>
-        </ul>
+      <ul class="gallery" aria-label="Meeting feature previews">
+        <li>
+          <img
+            src="./assets/desktop/image-woman-in-videocall.jpg"
+            alt="Woman participating in a video call"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/desktop/image-women-videochatting.jpg"
+            alt="Three women video chatting together"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/desktop/image-men-in-meeting.jpg"
+            alt="Man participating in a video call"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/desktop/image-man-texting.jpg"
+            alt="Man texting on his phone"
+          />
+        </li>
+      </ul>
 
-        <p class="product-subtitle">Built for modern use</p>
+      <p class="main-subtitle">Built for modern use</p>
 
-        <h2 id="product-title" class="product-title">
-          Smarter meetings, all in one place
-        </h2>
+      <h2 id="main-title" class="main-title">
+        Smarter meetings, all in one place
+      </h2>
 
-        <p class="product-description">
-          Send messages, share files, show your screen, and record your
-          meetings. All in one workspace. Control who can join with invite-only
-          team access, data encryption, and data export.
-        </p>
-      </section>
+      <p class="main-description">
+        Send messages, share files, show your screen, and record your meetings.
+        All in one workspace. Control who can join with invite-only team access,
+        data encryption, and data export.
+      </p>
     </main>
 
     <footer class="site-footer" aria-labelledby="footer-title">
-      <div class="footer-step" aria-hidden="true">
+      <div class="step" aria-hidden="true">
         <div class="step-line"></div>
         <div class="step-number">02</div>
       </div>
