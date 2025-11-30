@@ -20,34 +20,37 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <nav class=site-nav" aria-label="Primary">
+      <nav class="site-nav" aria-label="Primary">
         <a href="/" class="site-logo" aria-label="Meet homepage">
-          <img src="./assets/logo.svg" alt="Meet logo" />
+          <img src="/assets/logo.svg" alt="Meet logo" />
         </a>
       </nav>
-      
+
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media">
-          <img
-            src="./assets/tablet/image-hero.png"
-            alt="People joining a video meeting"
-          />
-        </div>
+        <img
+          class="hero-image"
+          alt="People joining a video meeting"
+          src="./assets/tablet/image-hero.png"
+        />
 
-        <h1 id="hero-title" class="hero-title">Group Chat for Everyone</h1>
+        <div class="hero-content">
+          <h1 id="hero-title" class="hero-title">Group Chat for Everyone</h1>
 
-        <p class="hero-description">
-          Meet makes it easy to connect with others face-to-face virtually and
-          collaborate across any device.
-        </p>
+          <p class="hero-description">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
 
-        <div class="hero-actions">
-          <button class="btn btn-primary">Download v1.3</button>
-          <button class="btn btn-secondary">What is it?</button>
+          <div class="hero-actions">
+            <button class="btn btn-primary">
+              Download <span class="version">v1.3</span>
+            </button>
+            <button class="btn btn-secondary">What is it?</button>
+          </div>
         </div>
       </section>
     </header>
@@ -98,16 +101,23 @@
     </main>
 
     <footer class="site-footer" aria-labelledby="footer-title">
-      <div class="footer-step" aria-hidden="true">02</div>
+      <div class="footer-step" aria-hidden="true">
+        <div class="step-line"></div>
+        <div class="step-number">02</div>
+      </div>
 
-      <h2>Experience more together</h2>
+      <div class="footer-content">
+        <h2 id="footer-title" class="footer-title">Experience more together</h2>
 
-      <p class="footer-description">
-        Stay connected with reliable HD meetings and unlimited one-on-one and
-        group video sessions.
-      </p>
+        <p class="footer-description">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
 
-      <button class="btn btn-primary footer-cta">Download v1.3</button>
+        <button class="btn btn-secondary">
+          Download <span class="version">v1.3</span>
+        </button>
+      </div>
     </footer>
   </body>
 </html>
