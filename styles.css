@@ -44,12 +44,8 @@ ul {
   list-style-type: none;
 }
 
-.site-nav {
-  display: flex;
-  justify-content: center;
-}
-
 .site-logo {
+  display: block;
   margin-top: 3rem;
   height: 1.75rem;
 }
@@ -315,7 +311,7 @@ ul {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin: 0 8rem 0;
+    margin: 1.5rem 8rem;
   }
 
   .hero-title {
