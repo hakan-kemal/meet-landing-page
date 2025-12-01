@@ -62,6 +62,10 @@ ul {
   height: 10rem;
   width: 100%;
   object-fit: cover;
+
+  &.desktop-only {
+    display: none;
+  }
 }
 
 .hero-content {
@@ -217,6 +221,7 @@ ul {
 @media (min-width: 48rem) {
   .hero {
     margin: 4rem auto;
+    width: fit-content;
   }
 
   .hero-image {
@@ -288,6 +293,14 @@ ul {
     height: fit-content;
     width: 24.625rem;
 
+    &.desktop-only {
+      display: block;
+    }
+
+    &.tablet-only {
+      display: none;
+    }
+
     &.left {
       margin-left: -1.75rem;
     }
@@ -295,10 +308,6 @@ ul {
     &.right {
       margin-right: -1.75rem;
     }
-  }
-
-  .tablet-only {
-    display: none;
   }
 
   .hero-content {
@@ -354,8 +363,9 @@ ul {
       ),
       url('/assets/desktop/image-footer.jpg');
     flex-direction: row;
-    gap: 2rem;
-    padding: 7rem auto;
+    justify-content: space-between;
+    gap: 0;
+    padding: 7rem 10rem;
     text-align: left;
   }
 
@@ -365,13 +375,12 @@ ul {
   }
 
   .footer-description {
-    margin-left: 2rem;
     max-width: 22rem;
     font-size: 1.125rem;
   }
 
   .footer-content .btn {
-    margin-left: 1.75rem;
+    margin-left: 4rem;
     min-width: fit-content;
   }
 }
