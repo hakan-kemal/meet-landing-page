@@ -190,7 +190,7 @@ ul {
 
 .footer-content {
   background: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)),
-    url('/assets/tablet/image-footer.jpg');
+    url('/assets/mobile/image-footer.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -212,4 +212,166 @@ ul {
 
 .footer-description {
   font-size: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .hero {
+    margin: 4rem auto;
+  }
+
+  .hero-image {
+    height: 19rem;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 4.5rem 10rem 0;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-actions {
+    flex-direction: row;
+  }
+
+  .site-main {
+    padding: 3.5rem 2.75rem 4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .main-content {
+    margin-inline: 5.5rem;
+  }
+
+  .main-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .main-title {
+    font-size: 2.25rem;
+  }
+
+  .footer-content {
+    background-image: linear-gradient(
+        rgba(77, 150, 168, 0.9),
+        rgba(77, 150, 168, 0.9)
+      ),
+      url('/assets/tablet/image-footer.jpg');
+    padding-inline: 8.25rem;
+  }
+
+  .footer-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .site-logo {
+    margin-top: 5rem;
+  }
+
+  .hero {
+    display: flex;
+    margin: 4rem auto;
+  }
+
+  .hero-image {
+    height: fit-content;
+    width: 24.625rem;
+
+    &.left {
+      margin-left: -1.75rem;
+    }
+
+    &.right {
+      margin-right: -1.75rem;
+    }
+  }
+
+  .tablet-only {
+    display: none;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 8rem 0;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-description {
+    font-size: 1.125rem;
+  }
+
+  .hero-actions {
+    flex-direction: row;
+  }
+
+  .site-main {
+    padding: 3.5rem 10rem 4.5rem;
+  }
+
+  .gallery {
+    gap: 2rem;
+  }
+
+  .main-content {
+    margin-inline: 18rem;
+  }
+
+  .main-subtitle {
+    font-size: 1rem;
+  }
+
+  .main-title {
+    max-width: 28rem;
+    font-size: 2.5rem;
+    margin-inline: auto;
+  }
+
+  .main-description {
+    font-size: 1.125rem;
+  }
+
+  .footer-content {
+    background-image: linear-gradient(
+        rgba(77, 150, 168, 0.9),
+        rgba(77, 150, 168, 0.9)
+      ),
+      url('/assets/desktop/image-footer.jpg');
+    flex-direction: row;
+    gap: 2rem;
+    padding: 7rem auto;
+    text-align: left;
+  }
+
+  .footer-title {
+    max-width: 28rem;
+    font-size: 2.5rem;
+  }
+
+  .footer-description {
+    margin-left: 2rem;
+    max-width: 22rem;
+    font-size: 1.125rem;
+  }
+
+  .footer-content .btn {
+    margin-left: 1.75rem;
+    min-width: fit-content;
+  }
 }
